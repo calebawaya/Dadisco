@@ -3,16 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dadisco Enterprise - quality construction and building materials in Dzodze, Ghana.">
+  <meta name="description" content="Dadisco Enterprise — quality building and construction materials in Dzodze, Ghana.">
+  <meta name="theme-color" content="#06192b">
   <title>Dadisco Enterprise | Building Materials</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="brand">DADISCO <span>BUILDING MATERIALS</span></div>
-    <div class="nav-links">
-      <a href="#home">Home</a><a href="#products">Products</a><a href="#about">About Us</a><a href="#services">Why Choose Us</a><a href="#contact">Contact</a>
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Dadisco Enterprise home">
+      DADISCO <span>BUILDING MATERIALS</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Why Choose Us</a>
+      <a href="#contact">Contact</a>
     </div>
+
     <a class="quote-btn" href="#contact">Get a Quote</a>
   </nav>
 
@@ -23,37 +36,105 @@
           <p class="eyebrow">PREMIUM BUILDING MATERIALS</p>
           <h1>Better Materials.<br><span>Stronger Structures.</span></h1>
         </div>
-        <img class="hero-logo" src="images/dadisco-logo.svg" alt="Dadisco company logo">
+        <img class="hero-logo" src="images/dadisco-logo.svg" alt="Dadisco Enterprise logo">
       </div>
-      <p class="hero-text">We supply high-quality construction materials to help you build durable, safe and beautiful structures. Everything you need, in one place.</p>
-      <a class="hero-btn" href="#products">Explore Our Products <span>→</span></a>
+
+      <p class="hero-text">
+        Quality construction materials for homes, commercial projects and building professionals.
+        Find dependable materials in one place.
+      </p>
+
+      <div class="hero-actions">
+        <a class="hero-btn" href="#products">Explore Products <span>→</span></a>
+        <a class="hero-secondary" href="#contact">Talk to Dadisco</a>
+      </div>
+
+      <div class="hero-stats" aria-label="Dadisco highlights">
+        <div><strong>5+</strong><span>Core materials</span></div>
+        <div><strong>Dzodze</strong><span>Serving the community</span></div>
+        <div><strong>Quality</strong><span>Project-focused supply</span></div>
+      </div>
     </div>
-    <div class="building-art" aria-hidden="true"><div class="tower t1"></div><div class="tower t2"></div><div class="tower t3"></div><div class="floor f1"></div><div class="floor f2"></div><div class="floor f3"></div><div class="crane"></div></div>
+
+    <div class="building-art" aria-hidden="true">
+      <div class="tower t1"></div><div class="tower t2"></div><div class="tower t3"></div>
+      <div class="floor f1"></div><div class="floor f2"></div><div class="floor f3"></div>
+      <div class="crane"></div>
+    </div>
   </header>
 
   <main>
-    <section id="products" class="products-section">
-      <div class="section-heading"><span></span><h2>OUR PRODUCTS</h2><span></span></div>
+    <section id="products" class="products-section reveal">
+      <div class="section-heading">
+        <span></span><div><p class="section-kicker">WHAT WE SUPPLY</p><h2>OUR PRODUCTS</h2></div><span></span>
+      </div>
+
       <div class="product-grid">
-        <article class="product-card"><img src="images/cement.svg" alt="Real cement bags and cement powder"><div class="product-info"><h3>Cement</h3><p>Strong cement for durable construction.</p></div></article>
-        <article class="product-card"><img src="images/wood.svg" alt="Real wooden timber boards"><div class="product-info"><h3>Wood</h3><p>Quality timber for framing and finishing.</p></div></article>
-        <article class="product-card"><img src="images/glass.svg" alt="Real clear glass panels"><div class="product-info"><h3>Glass</h3><p>Modern glass for building and architecture.</p></div></article>
-        <article class="product-card"><img src="images/steel.svg" alt="Real steel bars and sections"><div class="product-info"><h3>Steel</h3><p>Reliable steel for strong structures.</p></div></article>
-        <article class="product-card"><img src="images/copper.svg" alt="Real copper pipes and wire"><div class="product-info"><h3>Copper</h3><p>Durable copper for building installations.</p></div></article>
+        <article class="product-card">
+          <div class="product-image"><img src="images/cement.svg" alt="Cement materials"></div>
+          <div class="product-info"><span class="product-tag">FOUNDATION</span><h3>Cement</h3><p>Strong cement for dependable construction work.</p></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image"><img src="images/wood.svg" alt="Timber and wood materials"></div>
+          <div class="product-info"><span class="product-tag">TIMBER</span><h3>Wood</h3><p>Quality timber for framing, carpentry and finishing.</p></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image"><img src="images/glass.svg" alt="Glass building materials"></div>
+          <div class="product-info"><span class="product-tag">FINISHING</span><h3>Glass</h3><p>Modern glass solutions for building and architecture.</p></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image"><img src="images/steel.svg" alt="Steel building materials"></div>
+          <div class="product-info"><span class="product-tag">STRUCTURE</span><h3>Steel</h3><p>Reliable steel materials for strong structures.</p></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image"><img src="images/copper.svg" alt="Copper building materials"></div>
+          <div class="product-info"><span class="product-tag">INSTALLATION</span><h3>Copper</h3><p>Durable copper materials for building installations.</p></div>
+        </article>
       </div>
     </section>
 
-    <section id="services" class="benefits">
-      <div><b>✓ High Quality</b><p>Only quality materials for your projects.</p></div>
-      <div><b>▣ Reliable Supply</b><p>Dependable supply when you need it.</p></div>
-      <div><b>◆ Competitive Prices</b><p>Great value for your money.</p></div>
-      <div><b>◉ Expert Support</b><p>Helpful service for every project.</p></div>
+    <section id="services" class="benefits reveal">
+      <div><b>✓ High Quality</b><p>Materials selected with your project in mind.</p></div>
+      <div><b>▣ Reliable Supply</b><p>Dependable service when you need materials.</p></div>
+      <div><b>◆ Competitive Value</b><p>Practical options for different project needs.</p></div>
+      <div><b>◉ Helpful Support</b><p>Clear, friendly support from enquiry to purchase.</p></div>
     </section>
 
-    <section id="about" class="info-section"><h2>About Dadisco</h2><p>Dadisco Enterprise provides quality construction and building materials and dependable services for customers in Dzodze, Ghana.</p></section>
-    <section id="contact" class="info-section"><h2>Contact Us</h2><div class="contact-box"><p><strong>Address:</strong> 123 Ho Denu Road, Dzodze, Ghana</p><p><strong>Phone:</strong> 036 299 9999</p></div></section>
+    <section id="about" class="info-section about-section reveal">
+      <div>
+        <p class="section-kicker">ABOUT THE BUSINESS</p>
+        <h2>Built around quality and trust.</h2>
+        <p>Dadisco Enterprise provides construction and building materials for customers in Dzodze, Ghana. Our goal is simple: make it easier to find dependable materials for your next project.</p>
+      </div>
+      <div class="about-panel">
+        <span class="panel-icon">D</span>
+        <strong>Dadisco Enterprise</strong>
+        <span>Building materials &amp; construction supply</span>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section reveal">
+      <div>
+        <p class="section-kicker">LET'S BUILD</p>
+        <h2>Need materials for your next project?</h2>
+        <p>Contact Dadisco Enterprise for product enquiries and building-material needs.</p>
+      </div>
+      <div class="contact-box">
+        <p><strong>Location</strong><span>123 Ho Denu Road, Dzodze, Ghana</span></p>
+        <p><strong>Phone</strong><a href="tel:0362999999">036 299 9999</a></p>
+        <a class="contact-btn" href="tel:0362999999">Call Dadisco →</a>
+      </div>
+    </section>
   </main>
 
-  <footer><p>© 2026 Dadisco Enterprise. All rights reserved.</p></footer>
+  <footer>
+    <div class="footer-inner">
+      <div><strong>DADISCO</strong><span>BUILDING MATERIALS</span></div>
+      <p>© 2026 Dadisco Enterprise. All rights reserved.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
